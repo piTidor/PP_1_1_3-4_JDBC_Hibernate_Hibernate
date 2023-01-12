@@ -10,9 +10,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-public class UserServiceImpl implements UserService {
+    public class UserServiceImpl implements UserService {
 
-    UserDaoJDBCImpl us = new UserDaoJDBCImpl();
+    private UserDaoJDBCImpl us = new UserDaoJDBCImpl();
     public void createUsersTable() {
         us.createUsersTable();
     }
