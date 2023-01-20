@@ -22,7 +22,7 @@ public class Main {
             User u = it.next();
             System.out.println(u);
         }
-        us.cleanUsersTable();
+//        us.cleanUsersTable();
         us.dropUsersTable();
 
     }

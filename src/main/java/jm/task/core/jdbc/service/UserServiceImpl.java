@@ -16,26 +16,26 @@ import java.util.List;
     private UserDaoJDBCImpl us = new UserDaoJDBCImpl();
     private UserDaoHibernateImpl uss = new UserDaoHibernateImpl();
     public void createUsersTable() {
-        us.createUsersTable();
+        uss.createUsersTable();
     }
 
     public void dropUsersTable() throws SQLException, ClassNotFoundException {
-        us.dropUsersTable();
+        uss.dropUsersTable();
     }
 
     public void saveUser(String name, String lastName, byte age) throws SQLException, ClassNotFoundException {
-        us.saveUser(name,lastName,age);
+        uss.saveUser(name,lastName,age);
     }
 
     public void removeUserById(long id) {
-    us.removeUserById(id);
+    uss.removeUserById(id);
     }
 
     public List<User> getAllUsers() {
-        return us.getAllUsers();
+        return uss.getAllUsers();
     }
 
     public void cleanUsersTable() {
-    us.cleanUsersTable();
+    uss.cleanUsersTable();
     }
 }
